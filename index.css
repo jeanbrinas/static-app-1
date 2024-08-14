@@ -8,3 +8,21 @@
 .navbar {
 	background-color: #2b55c1;
 }
+.navbar .nav-link {
+	padding: .5rem 2rem !important;
+}
+
+/* HERO */
+
+.hero img {
+	max-width: 600px;
+}
+
+/* ABOUT */
+.about {
+    background-color: #2b55c1 !important;
+}
+
+.about * {
+	color: #fff;
+}

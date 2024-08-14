@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heraz | Fresh Deli Everyday</title>
 
     <!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
@@ -11,12 +12,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <!-- Animation | CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
   </head>
   <body>
     
 
-    
+    <!-- NAV START -->
   	<nav class="navbar navbar-expand-lg navbar-dark sticky-top px-md-5">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,58 +35,214 @@
               <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Our Products</a>
+              <a class="nav-link" href="#products">Our Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HERO SECTION START -->
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <div class="row align-items-center g-lg-5 py-5">
-        <div class="col-lg-7 text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
-          <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-light">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Password</label>
-            </div>
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Remember me
-              </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-            <hr class="my-4">
-            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
+    </nav>
+    <!-- NAV END -->
+
+    <!-- HERO SECTION START -->
+    <div id="landing" class="hero px-4 py-5 text-center">
+      <div class="container my-5 rounded-3 border shadow-lg">
+        <div class="row">
+          <div class="col-12">
+            <a href="#landing"><img class="d-block mx-auto mb-4" src="assets/heraz-header.jpg" alt="" width="100%"></a>
+            <h2 class="mb-5"><i>"Your morning delight. <br>Savor every breakfast moment."</i></h2>
+            <p class="lead">Experience the difference that freshness and quality make at Heraz. <br>Stop by today and treat yourself to something special!</p>
+
+            <div class="col-lg-6 mx-auto">
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="p-4 p-md-5 border rounded-3 bg-light">
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Full Name</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Message</label>
+                          </div>
+                          <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+                          <hr class="my-4">
+                          <small class="text-muted">Thank you for choosing Heraz! We look forward to serving you.</small>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+          </div>
+        </div>
+      </div>
+        
     </div>
     <!-- HERO SECTION END -->
       
 
+    <!-- ABOUT SECTION START -->
+    <div id="about" class="about">
+      <div class="container col-xxl-8 px-4 py-5 rounded aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade pointer-event" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div class="img-thumbnail">
+                  <img src="assets/product1.png" class="img-fluid" alt="Project1">
+                </div>
+                </div>
+                <div class="carousel-item active">
+                  <div class="img-thumbnail">
+                <img src="assets/product2.png" class="img-fluid" alt="Project2">
+              </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-thumbnail">
+                <img src="assets/product3.png" class="img-fluid" alt="Project3">
+              </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">About Heraz</h1>
+            <p class="lead">Welcome to the world of Heraz, where tradition meets innovation in every bite. Heraz is more than just a deli product—it's a culinary experience crafted with passion and precision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT SECTION END -->
+
+
+
+    <!-- PRODUCTS START -->
+    <div id="products">
+      <div class="container rounded aos-init aos-animate"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-5 fw-bold lh-1 mb-3 mt-5 text-center">Our Products</h1>
+            <div class="d-lg-flex justify-content-center p-md-5">
+              <div class="card col-xl-4 mb-5 mb-xl-0" >
+                <img src="assets/product3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Artisan Sandwiches</b></h5>
+                  <p class="card-text">Made to order with your choice of freshly baked bread, premium meats, and a wide array of toppings and condiments, our sandwiches are perfect for a quick lunch or a satisfying dinner.</p>
+                  <a href="#" class="btn btn-primary">Read more...</a>
+                </div>
+              </div>
+              <div class="card col-xl-4 mb-5 mb-xl-0 me-xl-5 mx-lg-5" >
+                <img src="assets/product1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Gourmet Charcuterie</b></h5>
+                  <p class="card-text">Our selection of cured meats and cheeses is carefully curated to offer a balance of flavors and textures. Perfect for entertaining or indulging at home, our charcuterie boards are sure to impress.</p>
+                  <a href="#" class="btn btn-primary">Read more...</a>
+                </div>
+              </div>
+              <div class="card col-xl-4 mb-5 mb-xl-0" >
+                <img src="assets/product2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Hot and Cold Platters</b></h5>
+                  <p class="card-text">Whether you're hosting a gathering or just want to take a break from cooking, our hot and cold platters are a convenient and delicious option. Choose from a variety of options, including roasted meats, seasonal vegetables, and more.</p>
+                  <a href="#" class="btn btn-primary">Read more...</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCTS END -->
+
+    <!-- CONTACT START -->
+    <div id="contacts">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5 rounded aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Contact Us</h1>
+
+            <p class="fs-4">We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.</p>
+
+            <p><b>Phone:</b> [Your Phone Number] <br>
+            <b>Email:</b> [Your Email Address] <br>
+            <b>Address:</b> [Your Deli Store Address]</p>
+
+            <p><b>Hours of Operation:</b> <br>
+            Monday - Friday: 8:00 AM - 6:00 PM <br>
+            Saturday: 9:00 AM - 5:00 PM <br>
+            Sunday: Closed</p>
+
+            <p>You can also connect with us on social media:
+            [Social Media Links]</p>
+            
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Full Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Message</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+              <hr class="my-4">
+              <small class="text-muted">Thank you for choosing Heraz! We look forward to serving you.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT END -->
 
 
   	<!-- Footer Start -->
-  	<footer class="bg-dark">
+  	<footer class="footer bg-dark">
         <div class="container d-md-flex justify-content-md-between py-3 ">
             <div class="mb-3 mb-md-0 d-flex justify-content-center">
-            	<a class="text-decoration-none" target="_blank" href="https://www.facebook.com/jeanbrinas">
+            	<a class="text-decoration-none" target="_blank" href="https://www.facebook.com/profile.php?id=61562776452914">
                     <img class="me-3" src="https://img.icons8.com/material/96/FFFFFF/facebook-new.png" alt="Facebook Logo" width="30" data-toggle="tooltip" data-placement="top" title="Facebook">
                 </a>
-                <a class="text-decoration-none" target="_blank" href="https://www.linkedin.com/in/jeanbrinas/">
+                <!-- <a class="text-decoration-none" target="_blank" href="https://www.linkedin.com/in/jeanbrinas/">
                     <img class="me-3" src="https://img.icons8.com/material/96/FFFFFF/linkedin--v1.png" alt="LinkedIn Logo" width="30" data-toggle="tooltip" data-placement="top" title="LinkedIn">
                 </a>
                 <a class="text-decoration-none" target="_blank" href="https://www.pinterest.ph/jeanbrinas/">
@@ -90,7 +250,7 @@
                 </a>
                 <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/jeanbrinas/">
                     <img class="me-3" src="https://img.icons8.com/material/96/FFFFFF/instagram-new--v1.png" alt="IG Logo" width="30" data-toggle="tooltip" data-placement="top" title="Instagram">
-                </a>
+                </a> -->
                 
             </div>
             <div class="d-block d-md-flex justify-content-center d-grid gap-3 text-white text-center">
@@ -108,6 +268,12 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Animation | AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
