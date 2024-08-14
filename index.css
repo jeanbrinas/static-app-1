@@ -1,0 +1,10 @@
+
+* {
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: #2b55c1;
+}
