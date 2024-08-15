@@ -22,7 +22,17 @@
 .about {
     background-color: #2b55c1 !important;
 }
+.about .img-thumbnail {
+	background-color: transparent;
+	border: none;
+}
 
 .about * {
 	color: #fff;
+}
+
+/* CONTACT 
+
+#contacts {
+	background-color: #F5F7F8;
 }
